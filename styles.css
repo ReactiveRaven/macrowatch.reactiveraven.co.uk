@@ -10,9 +10,29 @@ body {
     font-size: 1.5em;
 }
 
-.header {
+header, footer {
     background: #2a2a2a;
     padding: 2em 0;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 1em;
 }
 
 .container {
@@ -20,4 +40,8 @@ body {
     max-width: 960px;
     display: block;
     text-align: left;
+}
+
+a {
+    color: white;
 }

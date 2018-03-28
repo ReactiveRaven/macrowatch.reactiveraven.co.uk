@@ -1,6 +1,19 @@
 /* background grey: 434343 dark grey: 2a2a2a */
 
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
+    position: relative;
+    min-height: 100%;
     font-family: sans-serif;
     padding: 0;
     margin: 0;
@@ -8,6 +21,7 @@ body {
     background: #434343;
     color: white;
     font-size: 1.5em;
+    padding-bottom: 6em;
 }
 
 header, footer {
@@ -22,8 +36,8 @@ header h1 a {
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    clear: both;
+    right: 0;
+    left: 0;
 }
 
 footer ul {
@@ -44,4 +58,10 @@ footer ul li {
 
 a {
     color: white;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
 }
